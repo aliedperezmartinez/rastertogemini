@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="60">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <df name="src" root="src">
+      <df name=".svn">
+        <df name="prop-base">
+        </df>
+        <df name="props">
+        </df>
+        <df name="text-base">
+        </df>
+        <df name="tmp">
+          <df name="prop-base">
+          </df>
+          <df name="props">
+          </df>
+          <df name="text-base">
+          </df>
+        </df>
+        <in>entries</in>
+      </df>
+      <in>Makefile</in>
+      <in>rastertogemini10x.cpp</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>C:/Users/Administrador/NetBeans Projects/rastertogemini10x/makefile</itemPath>
+      <itemPath>rastertogemini10x-Makefile.mk</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>src</Elem>
+  </sourceRootList>
+  <projectmakefile>rastertogemini10x-Makefile.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>MinGW|MinGW</compilerSet>
+        <platform>3</platform>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>C:/Users/Administrador/NetBeans Projects/rastertogemini10x</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f makefile</buildCommand>
+          <cleanCommand>${MAKE} -f makefile clean</cleanCommand>
+          <executablePath></executablePath>
+          <ccTool>
+            <incDir>
+              <pElem>../../../Escritorio/rastertogemini10x</pElem>
+            </incDir>
+          </ccTool>
+        </makeTool>
+      </makefileType>
+    </conf>
+  </confs>
+</configurationDescriptor>
