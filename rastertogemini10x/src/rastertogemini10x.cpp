@@ -54,14 +54,14 @@ MATRIZ_IMPRESION CrearMatrizImpresion(int row_px, int col_px, int &rr, int &rc)
 void InsertarPixel(MATRIZ_IMPRESION &m, int row, int col)
 {
 	char mask[8];
-	mask[0] = 128;
-	mask[1] = 64;
-	mask[2] = 32;
-	mask[3] = 16;
-	mask[4] = 8;
-	mask[5] = 4;
-	mask[6] = 2;
-	mask[7] = 1;
+	mask[0] = 0x80;
+	mask[1] = 0x40;
+	mask[2] = 0x20;
+	mask[3] = 0x10;
+	mask[4] = 0x08;
+	mask[5] = 0x04;
+	mask[6] = 0x02;
+	mask[7] = 0x01;
 	int real_fil = (row / 8 > 0) ? row/8 : 0;
 	if (row % 8 == 0) real_fil--;
 	int real_col = col;
@@ -194,14 +194,14 @@ int main(int argc, char **argv)
 			for (i = 0; i < header.cupsBytesPerLine; i++)
 			{
 				int col = i * 8;
-				if ((data[i] & 128) > 0)	InsertarPixel(m, y, col);
-				if ((data[i] & 64) > 0)		InsertarPixel(m, y, col+1);
-				if ((data[i] & 32) > 0)		InsertarPixel(m, y, col+2);
-				if ((data[i] & 16) > 0)		InsertarPixel(m, y, col+3);
-				if ((data[i] & 8) > 0)		InsertarPixel(m, y, col+4);
-				if ((data[i] & 4) > 0)		InsertarPixel(m, y, col+5);
-				if ((data[i] & 2) > 0)		InsertarPixel(m, y, col+6);
-				if ((data[i] & 1) > 0)		InsertarPixel(m, y, col+7);
+				if ((data[i] & 0x80) > 0)	InsertarPixel(m, y, col);
+				if ((data[i] & 0x40) > 0)		InsertarPixel(m, y, col+1);
+				if ((data[i] & 0x20) > 0)		InsertarPixel(m, y, col+2);
+				if ((data[i] & 0x10) > 0)		InsertarPixel(m, y, col+3);
+				if ((data[i] & 0x08) > 0)		InsertarPixel(m, y, col+4);
+				if ((data[i] & 0x04) > 0)		InsertarPixel(m, y, col+5);
+				if ((data[i] & 0x02) > 0)		InsertarPixel(m, y, col+6);
+				if ((data[i] & 0x01) > 0)		InsertarPixel(m, y, col+7);
 			}
 		}
 		PrintMatriz(m, rr, rc, printer);

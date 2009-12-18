@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="60">
+<configurationDescriptor version="62">
   <logicalFolder name="root" displayName="root" projectFiles="true">
     <df name="src" root="src">
-      <df name=".svn">
-        <df name="prop-base">
-        </df>
-        <df name="props">
-        </df>
-        <df name="text-base">
-        </df>
-        <df name="tmp">
-          <df name="prop-base">
-          </df>
-          <df name="props">
-          </df>
-          <df name="text-base">
-          </df>
-        </df>
-        <in>entries</in>
-      </df>
-      <in>Makefile</in>
       <in>rastertogemini10x.cpp</in>
     </df>
     <logicalFolder name="ExternalFiles"
@@ -38,6 +20,8 @@
       <toolsSet>
         <developmentServer>localhost</developmentServer>
         <compilerSet>MinGW|MinGW</compilerSet>
+        <cRequired>true</cRequired>
+        <cppRequired>false</cppRequired>
         <platform>3</platform>
       </toolsSet>
       <makefileType>
