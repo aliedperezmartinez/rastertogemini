@@ -7,7 +7,6 @@
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="false">
-      <itemPath>C:/Users/Administrador/NetBeans Projects/rastertogemini10x/makefile</itemPath>
       <itemPath>rastertogemini10x-Makefile.mk</itemPath>
     </logicalFolder>
   </logicalFolder>

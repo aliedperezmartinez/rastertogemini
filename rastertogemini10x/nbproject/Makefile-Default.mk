@@ -50,14 +50,14 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	cd C\:/Documents\ and\ Settings/Juan\ Cristobal/Escritorio/rastertogemini10x && ${MAKE} -f makefile
+	cd C\:/Users/Administrador/NetBeans\ Projects/rastertogemini10x && ${MAKE} -f makefile
 
 # Subprojects
 .build-subprojects:
 
 # Clean Targets
-.clean-conf:
-	cd C\:/Documents\ and\ Settings/Juan\ Cristobal/Escritorio/rastertogemini10x && ${MAKE} -f makefile clean
+.clean-conf: ${CLEAN_SUBPROJECTS}
+	cd C\:/Users/Administrador/NetBeans\ Projects/rastertogemini10x && ${MAKE} -f makefile clean
 
 # Subprojects
 .clean-subprojects:
